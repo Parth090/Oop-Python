@@ -1,4 +1,4 @@
-'''l1 = [89,"python",98,67,"hello"]
+"""l1 = [89,"python",98,67,"hello"]
 num = []
 chaa = []
 for i in l1:
@@ -7,9 +7,9 @@ for i in l1:
     else:
         chaa.append(i)
 print(num)
-print(chaa)'''
+print(chaa)"""
 
-'''
+"""
 num = input("Enter number scored by aditya : ")
 if num.isdigit():
     num = int(num)
@@ -22,24 +22,24 @@ if num.isdigit():
     else:
         print("Aditya is failed")
 else:
-    print("Invalid input")'''
+    print("Invalid input")"""
 
 
-'''
+"""
 num = int(input("Enter number :"))
 b = []
 for i in range(1,num+1):
     b.append(i)
-print(b) '''    
+print(b) """
 
 
-'''
+"""
 def addnums(num1,num2):
     num3 = num1 + num2
     print(num3)
 
 
-addnums(3,5)'''
+addnums(3,5)"""
 
 # def category():
 #     '''Chose a category
@@ -54,38 +54,46 @@ addnums(3,5)'''
 #     else:
 #         print("Invalid input..")
 
-# def arth():
-#     '''chose operation
-#     1.Add
-#     2.Sub
-#     3.Div '''
-#     ope = int(input("Enter operation : "))
-#     num1 = int(input("Enter number :"))
-#     num2 = int(input("Enter second number :"))
 
-#     if ope == 1:
-#         num3 = addnums(num1,num2)
-#         print(num3)
-#     elif ope == 2:
-#         num3 = addsubr(num1,num2)
-#         print(num3)
-#     elif ope == 3:
-#         num3 = adddiv(num1,num2)
-#         print(num3)
-#     else:
-#         print("Invalid input : ")
-# def addnums(num1,num2):
-#     res = num1 + num2
-#     return res
-# def addsubr(num1,num2):
-#     res = num1 - num2
-#     return res
-# def adddiv(num1,num2):
-#     res = num1/num2
-#     return res
+def arth():
+    """chose operation
+    1.Add
+    2.Sub
+    3.Div """
+    ope = int(input("Enter operation : "))
+    num1 = int(input("Enter number :"))
+    num2 = int(input("Enter second number :"))
 
-# print(category.__doc__)
-# category()
+    if ope == 1:
+        num3 = addnums(num1, num2)
+        print(num3)
+    elif ope == 2:
+        num3 = addsubr(num1, num2)
+        print(num3)
+    elif ope == 3:
+        num3 = adddiv(num1, num2)
+        print(num3)
+    else:
+        print("Invalid input : ")
+
+
+def addnums(num1, num2):
+    res = num1 + num2
+    return res
+
+
+def addsubr(num1, num2):
+    res = num1 - num2
+    return res
+
+
+def adddiv(num1, num2):
+    res = num1 / num2
+    return res
+
+
+print(category.__doc__)
+category()
 
 # print("c:\\programs\\files\\new\\code\\test")
 
@@ -105,8 +113,8 @@ addnums(3,5)'''
 # print(help(str))
 
 
-strings = 'aditya'
+strings = "aditya"
 l = []
 
-for i in range(-1,-len(strings)-1,-1):
-    print(strings[i],end="")
+for i in range(-1, -len(strings) - 1, -1):
+    print(strings[i], end="")
